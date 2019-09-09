@@ -1,10 +1,20 @@
 <dl>
-  <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-<div id="myLandbot" style="width: 100%; height: 500px"></div>
+<script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
 <script>
-  var myLandbot = new LandbotFrameWidget({
-    container: '#myLandbot',
+  var myLandbot = new LandbotLivechat({
     index: 'https://landbot.io/u/H-253645-BNNP8RPCGCTIZ6SF/index.html',
+  });
+</script><script>
+  // Show a proactive message on landbot load
+  myLandbot.on('landbot-load', function() {
+    myLandbot.sendProactive({
+  "message": "Welcome to UCard!",
+  "author": "UCard",
+  "avatar": "https://storage.googleapis.com/media.helloumi.com/channels/71J4U9SD95WQZ98UR8T6X7BA7RG35PXC.png",
+  "extra": {
+    "hide_textbox": true
+  }
+});
   });
 </script>
   </dl>
