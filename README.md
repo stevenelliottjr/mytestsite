@@ -8,7 +8,7 @@
   // Show a proactive message on landbot load
   myLandbot.on('landbot-load', function() {
     myLandbot.sendProactive({
-  "message": "Welcome to UCard!",
+  "message": "Welcome to UCard, Click the chat icon to begin!",
   "author": "UCard",
   "avatar": "https://storage.googleapis.com/media.helloumi.com/channels/71J4U9SD95WQZ98UR8T6X7BA7RG35PXC.png",
   "extra": {
